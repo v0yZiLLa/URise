@@ -1,16 +1,9 @@
 package javaapplication2;
-
 import java.util.Random;
-
-/**
- *
- * @author YoV
- */
 public class JavaApplication2 {
 
-   
     public static void main(String[] args) {
-        // вернуть сумму всех значений массива
+        // Задание 1 - вернуть сумму всех значений массива
         int n=10;
         double mass[]=new double[n];
         System.out.println("Массив");
@@ -19,17 +12,20 @@ public class JavaApplication2 {
                 System.out.println("["+i+"] "+(int)mass[i]);
         }
         System.out.println("Сумма чисел в массиве = "+summMass(mass,n));
-        // число x в степень y
+        
+        // Задание 2 - число x в степень y
         int x=2,y=5;
         System.out.println("Число "+x+" в степени "+y+" = "+pow(x,y));
-        // фибоначчи рекурсией. без - делал в домашке №1 
+        
+        // Задание 3 - Фибоначчи рекурсией. без - делал в домашке №1 
         int i=1;
         while(i<20){
         System.out.print(fibonacci(i)+" ");
         i++;
         }
     }
- public static int summMass(double mass[],int n){
+ // Реализация
+ /*1*/public static int summMass(double mass[],int n){
  
      int summ=0, i=0;
      while(i<n){
@@ -39,7 +35,7 @@ public class JavaApplication2 {
          
      return summ;
  }   
-public static int pow(int x, int y)
+/*2*/public static int pow(int x, int y)
  {
     if (y==0)
         return 1;
@@ -51,7 +47,7 @@ public static int pow(int x, int y)
         return pow( x * x, y/2)*x;
  }
  
- public static int fibonacci(int i){
+ /*3*/public static int fibonacci(int i){
   return (i<=2)?1:(fibonacci(i-1)+fibonacci(i-2));
 }
     }
