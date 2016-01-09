@@ -50,7 +50,7 @@ public class Main {
     public static double pow(int x, int y) {
 
         if (y < 0) {
-            return 1 / ((x * pow(x, -(y + 1))));
+            return 1 / (x * pow(x, -(y + 1)));
         }
 
         if (y == 0) {
