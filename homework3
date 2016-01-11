@@ -22,9 +22,9 @@ public class Main {
         int n = 3;
         switchCase(n);
 //Вывести пять раз строку из четвертого теста ВТОРОЙ лекции.
-        for (int i = 0; i < 5; i++) {
-            printString("Hello motherfucker!!!");
-        }
+        
+        printString();
+        
 //Вывести в консоль числа от 1 до 10 последовательно с новой строки.
         int i = 1;
         while (i < 11) {
@@ -82,8 +82,8 @@ public class Main {
         }
     }
 
-    public static void printString(String str) {
-
-        System.out.println("Строка = " + str);
+    public static void printString() {
+        for (int i = 0; i < 5; i++)
+            System.out.println("Hello motherfucker!!!");
     }
 }
