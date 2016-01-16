@@ -5,11 +5,14 @@ import java.util.Scanner;
 public class JavaApplication2 {
 
     public static void main(String[] args) throws Exception {
-        int number1 = 1334;
-        int number2 = getNumber2();
-        //System.out.println(summ(2464)+" ");
+          int number1 = 1334;
+        int number2;
+        do{
+        number2 = getNumber2();
         System.out.println(doSmthwithNumbers(number1, number2) + " ");
-        doNumbers(number1, number2);
+        
+        }
+        while(doNumbers(number1, number2));
     }
 
     public static int getNumber2() {
@@ -59,11 +62,12 @@ public class JavaApplication2 {
     }
 
     public static int doNumbers(int number1, int number2) {
-        do {
+        while (number1 > 1000)
+        {
             number1 -= number2;
             System.out.println(number1);
-        } while (number1 > 999);
-
-        return number1;
+            return true;
+        }
+        return false;
     }
 }
