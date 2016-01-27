@@ -22,7 +22,7 @@ public class Домашка5 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        int a = 3, b = 15;
+        /*15*/ a = 3, b = 15;
         System.out.println("Стрелки встретились " + isArrowsMet(a, b));
         /*17*/
         System.out.print("/*17*/ ");
@@ -71,7 +71,7 @@ public class Домашка5 {
         print2DimArray(mass2, 8, 8);
 
     }
-
+    /*15*/
     public static boolean isArrowsMet(int a, int b) {
         if (b / a == 5) {
             return true;
